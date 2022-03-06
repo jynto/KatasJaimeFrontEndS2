@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bienbenido a la Pasteleria</title>
+    </head>
+    <body>
+        <form action="/accion.js" method="post">
+        <img src="./logo.png" alt="logo" width="160px">
+        <h2>Pasteleria Star</h2>
+        <hr>
+        <h2>Pasteles</h2>
+        
+        <label for="p3leches"><input type="radio" id="p3leches" name="pastel">Pastel de 3 Leches........................... $420.00 </label><br>
+        <label for="psnickers"><input type="radio" id="psnickers" name="pastel">Pastel de Snickers............................ $450.00 </label><br>
+        <label for="pchocolate"><input type="radio" id="pchocolate" name="pastel">Pastel de Chocolate......................... $420.00 </label><br>
+        <label for="pfresas"><input type="radio" id="pfresas" name="pastel">Pastel de Fresas............................... $380.00</label><br>
+        <label for="pzanahoria"><input type="radio" id="pzanahoria" name="pastel">Pastel de zanahoria.......................... $350.00</label><br>
+        <label for="predvelvet"><input type="radio" id="predvelvet" name="pastel">Red Velvet....................................... $430.00</label><br>
+        <label for="poreo"><input type="radio" id="oreo" name="pastel">Oreo................................................. $420.00</label><br>
+        <label for="pplatanocn"><input type="radio" id="pplatanocn" name="pastel">Platano con Chocolate y Nueces..... $420.00</label><br><br>
+
+        <h2>Adornos</h2>
+        <p>Puedes incluir algun adorno que te guste, o si lo prefieres. puedes crear una combinacion entre los tipos de adornos que tenemos para ti. Esto lo podras especificar mas abajo en "Formulario"</p>
+        <ul>
+            <li>Decoraciones en 3D........................................................ $200.00</li>
+            <li>Decoraciones Florales..................................................... $120.00</li>
+            <li>Decoraciones Geometricas.............................................. Sin costo</li>
+            <li>Decoraciones Semidesnuda o Nacked............................. Sin costo</li>
+            <li>Decoraciones Drip........................................................... Sin costo</li>
+            <li>Decoraciones Buttercream o Crema de Mantequilla....... Sin costo</li>
+            <li>Decoraciones Ganache o Crema de Chocolate................ Sin costo</li>
+            <li>Decoraciones Praline....................................................... Sin costo</li>
+        </ul><br>
+
+        <h2>Sabores</h2>
+        <p>Elige entre los mejores sabores o haz tu combinacion especificando que te gustaria mas abajo en "Formulario"</p>
+        <ul>
+            <li>Relleno...................................... Sin costo</li>
+            <li>Cubierta..................................... Sin costo</li>
+            <li>Vainilla...................................... Sin costo</li>
+            <li>Chocolate.................................. Sin costo</li>
+            <li>Fresa.......................................... Sin costo</li>
+            <li>Limon........................................ Sin costo</li>
+            <li>Mermelada................................ Sin costo</li>
+        </ul><br>
+
+        <label for="refresco">Elige tu refresco*</label><br>
+        <select id="refresco" name="refresco">
+            <option value="Ninguno">Ninguno</option>
+            <option value="Coca-Cola">Coca-Cola</option>
+            <option value="Manzana">Manzana</option>
+            <option value="Fresa">Fresa</option>
+            <option value="Naranja">Naranja</option>
+            <option value="Sprite">Sprite</option>
+        </select>
+
+        <h2>Pays</h2>
+        
+        <label for="pyqueso"><input type="radio" id="pyqueso" name="pay">Pay de Queso......... $220.00</label><br>
+        <label for="pymanzana"><input type="radio" id="pymanzana" name="pay">Pay de Manzana..... $200.00</label><br>
+        <label for="pylimon"><input type="radio" id="pylimon" name="pay">Pay de Limon......... $180.00</label><br><br>
+        <input type="reset"></form><br>
+
+        <hr>
+
+        <form action="/accion.js" method="post">
+        <h2>Extras</h2>
+        <input type="checkbox" id="ext1" name="ext1">
+        <label for="ext1"> Bolsa de regalo "30x15x25 cm" <input type="number" id="ext1" name="ext1" min="1" max="25" placeholder="0"> $25.00 Pza.</label><br>
+        <input type="checkbox" id="ext2" name="ext2">
+        <label for="ext2"> Vela luminosa <input type="number" id="ext2" name="ext2" min="1" max="25" placeholder="0"> $65.00 Pza.</label><br>
+        <input type="checkbox" id="ext3" name="ext3">
+        <label for="ext3"> Globo metalico decorado <input type="text" id="ext3" name="ext3" placeholder="Escribe aqui tu mensaje"> $65.00 Pza.</label><br>
+        <!--<input type="checkbox" id="ext4" name="ext4">
+        <label for="ext4"> Globos <input type="color" id="ext4" name="ext4"> Paquete con 25 Pzas. $25.00 </label><br>-->
+        <!--<input type="checkbox" id="ext5" name="ext5">
+        <label for="ext5"> Vela vengala de colores <input type="number" id="ext5" name="ext5" min="1" max="25" placeholder="0"> $65.00 Pza.</label><br>-->
+        <input type="checkbox" id="ext6" name="ext6">
+        <label for="ext6"> Platos <input type="number" id="ext6" name="ext6" min="1" max="25" placeholder="0"> Paquete con 15 Pzas. $20.00 </label><br>
+        <input type="checkbox" id="ext7" name="ext7">
+        <label for="ext7"> Globo en forma de numero o letras <input type="text" id="ext7" name="ext7" maxlength="30" placeholder="Escribe aqui el # o letras"> $20.00 Pza.</label><br>
+        <input type="checkbox" id="ext8" name="ext8">
+        <label for="ext8"> Tenedores <input type="number" id="ext8" name="ext8" min="1" max="25" placeholder="0"> Paquete con 15 Pzas. $15.00 </label><br>
+        <input type="checkbox" id="ext9" name="ext9">
+        <label for="ext9"> Cucharas <input type="number" id="ext9" name="ext9" min="1" max="25" placeholder="0"> Paquete con 15 Pzas. $15.00 </label><br>
+        <input type="checkbox" id="ext10" name="ext10">
+        <label for="ext10"> Vasos <input type="number" id="ext10" name="ext10" min="1" max="25" placeholder="0"> Paquete con 25 Pzas. $20.00 </label><br>
+        <input type="checkbox" id="ext11" name="ext11">
+        <label for="ext11">Pala para pastel $20.00</label><br>
+        <input type="checkbox" id="ext12" name="ext12">
+        <label for="ext12"> Servilletas <input type="number" id="ext12" name="ext12" min="1" max="25" placeholder="0"> Paquete con 30 Pzas. $15.00 </label><br><br>
+        <input type="reset"></form><br>
+
+        <hr>
+        
+        <form action="/accion.js" method="post">
+        <h2>Formulario</h2>
+
+        <label for="name1">Nombre:* </label><br>
+        <input type="text" id="name1" name="name1" minlength="1" maxlength="22"><br><br>
+        <label for="name2">Apellido:* </label><br>
+        <input type="text" id="name2" name="name2" minlength="1" maxlength="30"><br><br>
+        <label for="dir1"><input type="radio"id="dir1" name="dir">Recoger en tienda</label><br>
+        <label for="dir2"><input type="radio" id="dir2" name="dir">Envio a domicilio</label><br><br>
+        <input type="text" id="dir2" name="dir2" maxlength="45" placeholder="Direccion"><br><br>
+        <label for="correo1">Email: </label><br>
+        <input type="email" id="correo1" name="correo1" minlength="5" maxlength="32"><br><br>
+        <label for="tel1">Tel:* </label><br>
+        <input type="tel" id="tel1" name="tel1" placeholder="Numero a 10 digitos" minlength="10" maxlength="10"><br><br>
+        <label for="detalles">Describe Como te gustaria tu pastel, recuerda que puedes agregar entre adornos y sabores.</label><br>
+        <input type="text" id="detalles" name="detalles" placeholder="Cuentanos..."><br><br>
+        <p>Los campos requeridos estan marcados con * - El envio a domicilio no tiene costo extra dentro de la ciudad - Los precios estan sujetos a cambio sin previo aviso - Por el momento solo aceptamos pagos en efectivo - Refresco de 3 litros gratis en la compra de un pastel</p>
+        <input type="reset"></form><br><input type="button" id="boton1" name="boton1" value="Aceptar y continuar" onclick="alert('Felicidades, realizaste tu pedido con exito.');">
+        <a href="./Pagina2.html">
+        <input type="button" value="Ir a pastelero"></a><br><br>
+
+        <hr>
+        
+        <h2>Acerca de nosotros</h2>
+        <p>Direccion: Asteroides 100 <br> Col. Marte. Ciudad de Mexico. <br> Tel: 1234567890 y 1234567891 <br> Horario de atencion: Lunes a Domingo, de 8:00 a.m. a 8:00 p.m.</p>
+
+    </body>
+</html>
